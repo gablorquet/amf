@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "amf", "amf\amf.csproj", "{1F8C83F9-6CB1-406C-8AF8-D082EB30B386}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMF.Web", "amf\AMF.Web.csproj", "{1F8C83F9-6CB1-406C-8AF8-D082EB30B386}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "amf.Tests", "amf.Tests\amf.Tests.csproj", "{0D0A46F9-ABE7-4DAC-A872-6A8C15C48389}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMF.Tests", "amf.Tests\AMF.Tests.csproj", "{0D0A46F9-ABE7-4DAC-A872-6A8C15C48389}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{29EE37AB-6240-4C04-9130-C3880D65C6EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{0D0A46F9-ABE7-4DAC-A872-6A8C15C48389}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D0A46F9-ABE7-4DAC-A872-6A8C15C48389}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D0A46F9-ABE7-4DAC-A872-6A8C15C48389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29EE37AB-6240-4C04-9130-C3880D65C6EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29EE37AB-6240-4C04-9130-C3880D65C6EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29EE37AB-6240-4C04-9130-C3880D65C6EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29EE37AB-6240-4C04-9130-C3880D65C6EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
