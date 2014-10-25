@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Linq;
 using System.Web.Mvc;
 using amf.Models;
 using Core.Authentication;
@@ -30,8 +27,8 @@ namespace amf.Areas.Team.Controllers
 
         public ActionResult Login()
         {
-            return _authentication.GetCurrent<Animateur>() != null 
-                ? WhenLoggedIn() : 
+            return _authentication.GetCurrent<Animateur>() != null
+                ? WhenLoggedIn() :
                 View();
         }
 

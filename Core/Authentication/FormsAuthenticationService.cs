@@ -44,7 +44,9 @@ namespace Core.Authentication
         {
             var data = HttpContext.Current.User.Identity.Name;
             var user = JsonConvert.DeserializeObject<CurrentUser>(data);
-            return _session.SingleById<T>(user.UserId);
+            return user == null
+                ? null
+                : _session.SingleById<T>(user.UserId);
         }
 
         public bool IsAuthenticated()
