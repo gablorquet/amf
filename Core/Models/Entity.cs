@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Core.Models
 {
@@ -14,10 +10,7 @@ namespace Core.Models
 
         public DateTime CreationDate { get; set; }
 
-        public bool IsNew()
-        {
-            return Id == 0;
-        }
+        public bool Archived { get; set; }
 
         protected Entity()
         {

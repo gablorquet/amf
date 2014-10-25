@@ -1,4 +1,5 @@
-﻿using System.Data.Entity.Migrations;
+﻿using System.Data.Entity.Infrastructure;
+using System.Data.Entity.Migrations;
 using Core.Storage;
 
 namespace Core.Migrations
@@ -8,6 +9,7 @@ namespace Core.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
+            AutomaticMigrationDataLossAllowed = true;
         }
 
         protected override void Seed(AMFDbContext context)
