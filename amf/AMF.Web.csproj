@@ -193,9 +193,13 @@
     <Compile Include="App_Start\AuthConfig.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Player\PlayerAreaRegistration.cs" />
+    <Compile Include="Areas\Team\Controllers\CiController.cs" />
+    <Compile Include="Areas\Team\Controllers\DashboardController.cs" />
+    <Compile Include="Areas\Team\Controllers\HomeController.cs" />
     <Compile Include="Areas\Team\TeamAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
@@ -265,6 +269,8 @@
     <Content Include="Global.asax" />
     <Content Include="Areas\Team\Views\Web.config" />
     <Content Include="Areas\Player\Views\Web.config" />
+    <Content Include="Areas\Team\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Team\Views\Home\Login.cshtml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -327,8 +333,8 @@
     <Folder Include="Areas\Player\Controllers\" />
     <Folder Include="Areas\Player\Models\" />
     <Folder Include="Areas\Player\Views\Shared\" />
-    <Folder Include="Areas\Team\Controllers\" />
     <Folder Include="Areas\Team\Models\" />
+    <Folder Include="Areas\Team\Views\Dashboard\" />
     <Folder Include="Areas\Team\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>

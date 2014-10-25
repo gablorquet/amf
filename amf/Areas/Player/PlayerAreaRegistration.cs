@@ -17,8 +17,8 @@ namespace amf.Areas.Player
             context.MapRoute(
                 "Player_default",
                 "Player/{controller}/{action}/{id}",
-                new { action = "Index", id = UrlParameter.Optional }
-            );
+                new { controller = "Home", action = "Login", id = UrlParameter.Optional },
+                namespaces: new[] { "amf.Areas.Player.Controllers" });
         }
     }
 }

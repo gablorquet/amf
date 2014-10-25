@@ -65,6 +65,7 @@
     <Compile Include="Authentication\FormsAuthenticationService.cs" />
     <Compile Include="Authentication\IAuthenticationService.cs" />
     <Compile Include="CoreNinjectModule.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Migrations\201410240400573_Animateurs.cs" />
     <Compile Include="Migrations\201410240400573_Animateurs.Designer.cs">
       <DependentUpon>201410240400573_Animateurs.cs</DependentUpon>
@@ -72,6 +73,10 @@
     <Compile Include="Migrations\201410251549035_FirstMajorUpdate.cs" />
     <Compile Include="Migrations\201410251549035_FirstMajorUpdate.Designer.cs">
       <DependentUpon>201410251549035_FirstMajorUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201410251706549_CategoryName.cs" />
+    <Compile Include="Migrations\201410251706549_CategoryName.Designer.cs">
+      <DependentUpon>201410251706549_CategoryName.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Animateur.cs" />
@@ -110,6 +115,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201410251549035_FirstMajorUpdate.resx">
       <DependentUpon>201410251549035_FirstMajorUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201410251706549_CategoryName.resx">
+      <DependentUpon>201410251706549_CategoryName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

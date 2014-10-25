@@ -17,8 +17,8 @@ namespace amf.Areas.Team
             context.MapRoute(
                 "Team_default",
                 "Team/{controller}/{action}/{id}",
-                new { action = "Index", id = UrlParameter.Optional }
-            );
+                new { controller = "Home", action = "Login", id = UrlParameter.Optional },
+                namespaces: new[] { "amf.Areas.Team.Controllers" });
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System.Data.Entity;
+using Core.Authentication;
 using Core.Migrations;
 using Core.Storage;
 using Ninject.Modules;
@@ -22,7 +23,10 @@ namespace Core
                 .To<EntitySession>()
                 .InRequestScope();
 
-            
+            Kernel.Bind<IAuthenticationService>()
+                .To<FormsAuthenticationService>()
+                .InRequestScope();
+
         }
     }
 
