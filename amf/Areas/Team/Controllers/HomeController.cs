@@ -29,7 +29,7 @@ namespace amf.Areas.Team.Controllers
         {
             return _authentication.GetCurrent<Animateur>() != null
                 ? WhenLoggedIn() :
-                View();
+                View(new LoginModel());
         }
 
         [HttpPost]
@@ -50,7 +50,7 @@ namespace amf.Areas.Team.Controllers
             if (animateur == null)
             {
                 ModelState.AddModelError("", "Invalid Login info");
-                return View();
+                return View(model);
             }
 
             _authentication.SetCurrent(animateur);

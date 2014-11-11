@@ -1,0 +1,125 @@
+body {
+    padding-top: 45px;
+}
+
+#side-nav {
+    margin-top: 1em;
+}
+
+.row {
+    max-width: none;
+}
+
+ul {
+    margin-left: 14px;
+}
+
+.t-link {
+	padding: 5px;
+}
+
+.t-pager {
+	display: inline;
+}
+.t-numeric {
+	display: inline;
+}
+.t-arrow-next {
+	padding-right: 5px;
+}
+
+.t-arrow-first {
+	padding-right: 5px;
+}
+
+fieldset legend {
+    font-weight: bold;
+    background: #ffffff;
+    padding: 0 0.1875em;
+    margin: 0;
+    margin-left: -0.1875em;
+}
+
+#side-nav .title {
+    font-size: 1.5em;
+}
+
+.columns.stick-to-left {
+    margin-left: 0;
+    padding: 0;
+}
+
+.value-text {
+    line-height: 1.4;
+    color: #2ba6cb;
+    font-weight: 300;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+}
+
+.right-spacing {
+    margin-right: 10px;
+}
+
+.value-text-fied label {
+    cursor: default;
+}
+
+.field {
+    margin-bottom: 1em;
+}
+
+.field input, .field select {
+    margin: 0;
+}
+
+.field.checkbox-field label {
+    display: inline;
+}
+
+.field .hint {
+    padding-top: 5px;
+    display: block;
+    line-height: 1.4;
+    color: #2ba6cb;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+.field .warn {
+    padding-bottom: 5px;
+    display: block;
+    line-height: 1.4;
+    color: #ff0000;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+.field textarea {
+    height: 75px;
+    resize: none;
+}
+
+table td img.service-icon {
+    width: 40px;
+    max-width: none;
+}
+
+div.forms-on-same-line form {
+    display: inline-block;
+    margin: 0;
+}
+
+.right-box-infos {
+    font-size: 0.875em;
+}
+
+.smaller {
+    font-size: 0.8em;
+}
+
+input[type=file] {
+    font-size: inherit !important;
+}
+
+/********* /Foundation Overwrite ********/
