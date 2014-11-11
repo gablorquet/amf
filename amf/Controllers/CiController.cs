@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Web.Mvc;
 using Core.Extensions;
 using Core.Models;
 using Core.Models.System;
 using Core.Storage;
 
-namespace amf.Areas.Team.Controllers
+namespace amf.Controllers
 {
     public class CiController : Controller
     {
@@ -116,13 +117,14 @@ namespace amf.Areas.Team.Controllers
             };
             _session.Add(contact);
 
-            var player = new Core.Models.Player
+            var player = new Player
             {
                 Email = "gablorquet@gmail.com",
                 Name = "Gab Lorquet",
                 Username = "GabLorkPlayer",
                 Password = "Password1".ToSHA1(),
-                EmergencyContact = contact
+                EmergencyContact = contact,
+                Birthday = new DateTime(1986,01,29)
             };
             _session.Add(player);
 

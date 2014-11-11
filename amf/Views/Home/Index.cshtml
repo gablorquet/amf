@@ -1,29 +1,21 @@
 ﻿@{
     ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@section featured {
-    <section class="featured">
-        <div class="content-wrapper">
-            <hgroup class="title">
-                <h1>Bienvenue sur le site des AMF</h1>
-            </hgroup>
-            <p>
-                @Html.ActionLink("Accéder au login animateur", "Login", "Home", new {area = "Team"}, null)
-            </p>
-        </div>
-    </section>
-}
-<h3>Le site est en construction</h3>
-<ol class="round">
-    <li class="one">
-        <h5>Création des personnages en ligne</h5>
-        Le futur site vous permettera de créer, d'accéder et gérer votre personnage directement en ligne !
-    </li>
+<div class="row">
+    <div class="columns large-12 stick-to-left">
+        <h1>Aventures Médievales Fantastiques</h1>
+        <hr />
+    </div>
+</div>
 
-    <li class="two">
-        <h5>Forum intégré pour les institutions</h5>
-        Gérez directement votre institution, effectuez vos action d'influence et voyez les statistiques de votre institution à partir du portail !
-        Communiquez directement avec l'équipe d'animation via votre forum de groupe privé.
-    </li>
+<div class="row">
 
-</ol>
+    <div class="columns large-6 stick-to-left">
+        
+        Bienvenue sur le site des AMF
+        
+    </div>
+
+
+</div>

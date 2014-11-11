@@ -1,5 +1,18 @@
-﻿@{
+﻿@using System.Web.UI.WebControls
+@model  amf.Models.LoginModel
+
+@{
     ViewBag.Title = "Login";
 }
 
 <h2>Login</h2>
+
+@using (Html.BeginForm("Login", "Home"))
+{
+    <div>
+        @Html.EditorFor(x => x.UserName)
+        @Html.EditorFor(x => x.Password)
+        
+        <button type="submit">Login</button>
+    </div>
+}
